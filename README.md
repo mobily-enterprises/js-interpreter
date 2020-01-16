@@ -1,8 +1,8 @@
-# NPM version of the official JS Interpreter by Neil Fraser
+# OFFICIAL NPM pacckage for Neil Fraser's JS Interpreter
 
-This is the NPM version of the [official JS interpreter by NeilFraser](https://github.com/NeilFraser/JS-Interpreter).
+This is the official NPM version of the [JS interpreter by NeilFraser](https://github.com/NeilFraser/JS-Interpreter).
 
-It's not a fork. The original JS-interpreter is a GIT submodule of this project.
+If you want to use JS-Interpreter, please use this package,
 
 ## Usage
 
@@ -10,9 +10,8 @@ In node:
 
     const Interpreter = require('js-interpreter-npm')
     const acorn = require('js-interpreter-npm/acorn') // If you need acorn directly
-    
- In the browser (as you would use js-interpreter straight):
- 
+
+ In the browser (usage is identical to using js-interpreter directly):
+
     <script src="acorn.js"></script>
     <script src="interpreter.js"></script>
-    
