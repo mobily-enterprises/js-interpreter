@@ -1,6 +1,6 @@
 {
   "name": "js-interpreter-npm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "OFFICIAL NPM package for Neil Fraser's JS-Interpreter",
   "main": "js-interpreter.js",
   "scripts": {
