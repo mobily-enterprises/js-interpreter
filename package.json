@@ -1,0 +1,22 @@
+{
+  "name": "js-interpreter",
+  "version": "1.0.0",
+  "description": "NPM package for Neil Fraser's amazing JS-Interpreter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercmobily/js-interpreter.git"
+  },
+  "keywords": [
+    "js-interpreter"
+  ],
+  "author": "Tony Mobily",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mercmobily/js-interpreter/issues"
+  },
+  "homepage": "https://github.com/mercmobily/js-interpreter#readme"
+}
