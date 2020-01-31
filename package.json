@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mercmobily/js-interpreter.git"
+    "url": "git+https://github.com/mobily-enterprises/js-interpreter.git"
   },
   "keywords": [
     "js-interpreter"
@@ -16,7 +16,7 @@
   "author": "Tony Mobily",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mercmobily/js-interpreter/issues"
+    "url": "https://github.com/mobily-enterprises/js-interpreter/issues"
   },
-  "homepage": "https://github.com/mercmobily/js-interpreter#readme"
+  "homepage": "https://github.com/mobily-enterprises/js-interpreter#readme"
 }
