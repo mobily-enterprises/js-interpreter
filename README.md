@@ -1,10 +1,6 @@
-# OFFICIAL NPM pacckage for Neil Fraser's JS Interpreter
+# NPM pacckage for Neil Fraser's JS Interpreter
 
-## Note: Do NOT use this package yet, since it will likely change its address frpm js-interpreter-npm to js-interpreter.
-
-This is the official NPM version of the [JS interpreter by NeilFraser](https://github.com/NeilFraser/JS-Interpreter).
-
-If you want to use JS-Interpreter, please use this package,
+This is an NPM version of the [JS interpreter by NeilFraser](https://github.com/NeilFraser/JS-Interpreter).
 
 ## Usage
 
