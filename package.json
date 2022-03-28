@@ -1,7 +1,7 @@
 {
   "name": "js-interpreter-npm",
-  "version": "1.0.6",
-  "description": "OFFICIAL NPM package for Neil Fraser's JS-Interpreter",
+  "version": "1.0.7",
+  "description": "NPM package for Neil Fraser's JS-Interpreter",
   "main": "js-interpreter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
