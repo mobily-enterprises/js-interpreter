@@ -3,8 +3,7 @@
 # STEP 1: Copy Acorn over
 cp js-interpreter/acorn.js .
 
-# STEP 1: Make up the interpreter
-cp js-interpreter/acorn.js .
+# STEP 2: Make up the interpreter
 
 (
 cat <<EOD
