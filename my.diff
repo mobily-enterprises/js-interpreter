@@ -1,0 +1,31 @@
+--- interpreter.js
++++ interpreter.js
+@@ -1,3 +1,4 @@
++var acorn=require("acorn")
+ /**
+  * @license
+  * Copyright 2013 Google LLC
+@@ -364,7 +365,7 @@ Interpreter.prototype.parse_ = function(code, sourceFile) {
+      options[name] = Interpreter.PARSE_OPTIONS[name];
+    }
+    options.sourceFile = sourceFile;
+-   return Interpreter.nativeGlobal.acorn.parse(code, options);
++   return acorn.parse(code, options);
+ };
+ 
+ /**
+@@ -4803,7 +4804,7 @@ Interpreter.prototype['stepWhileStatement'] =
+ 
+ // Preserve top-level API functions from being pruned/renamed by JS compilers.
+ // Add others as needed.
+-Interpreter.nativeGlobal['Interpreter'] = Interpreter;
++//Interpreter.nativeGlobal['Interpreter'] = Interpreter;
+ Interpreter.prototype['step'] = Interpreter.prototype.step;
+ Interpreter.prototype['run'] = Interpreter.prototype.run;
+ Interpreter.prototype['appendCode'] = Interpreter.prototype.appendCode;
+@@ -4824,3 +4825,5 @@ Interpreter.prototype['getStateStack'] = Interpreter.prototype.getStateStack;
+ Interpreter.prototype['setStateStack'] = Interpreter.prototype.setStateStack;
+ Interpreter['VALUE_IN_DESCRIPTOR'] = Interpreter.VALUE_IN_DESCRIPTOR;
+ Interpreter['Status'] = Interpreter.Status;
++
++module.exports=Interpreter;
