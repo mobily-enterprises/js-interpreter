@@ -4,7 +4,16 @@ if (typeof exports === 'undefined') {
 } else {
   globalThis = exports
   globalThis.acorn = require('./acorn.js')
+
+  // This is important as JS-Interpreter assumes that the "global" scope
+  // includes primitive variable types
+  globalThis.String = String
+  globalThis.Date = Date
+  globalThis.Boolean = Boolean
+  globalThis.Number = Number
+  globalThis.RegExp = RegExp
 }
+
 /**
  * @license
  * Copyright 2013 Google LLC
