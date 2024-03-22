@@ -21,7 +21,7 @@ jobs:
       with:
         update: true
         msystem: mingw64
-        pacboy: node:x
+        pacboy: nodejs:x
     - uses: actions/checkout@v3
       with:
          submodules: true
