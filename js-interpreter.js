@@ -1,5 +1,10 @@
-var globalThis = exports
-globalThis.acorn = require('./acorn.js')
+var globalThis
+if (typeof exports === 'undefined') {
+  globalThis = window
+} else {
+  globalThis = exports
+  globalThis.acorn = require('./acorn.js')
+}
 /**
  * @license
  * Copyright 2013 Google LLC
