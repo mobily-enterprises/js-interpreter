@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   devtool: 'source-map', // or 'inline-source-map'
+  target: 'node', // Add this line
   entry: './js-interpreter.js',
   output: {
     filename: 'interpreter.umd.js',
