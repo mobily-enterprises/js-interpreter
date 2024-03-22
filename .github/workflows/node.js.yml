@@ -26,9 +26,11 @@ jobs:
       with:
          submodules: true
          fetch-depth: 15
-         ref: interestin
+         ref: master
     - name: Test npm
       run: |
+        pwd
+        ls
         ./configure.sh
         npm install .
         npm run build 
