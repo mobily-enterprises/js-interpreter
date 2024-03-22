@@ -1,11 +1,5 @@
-if (typeof exports === 'undefined') {
-  scope = window
-} else {
-  scope = exports
-  var acorn = require('./acorn.js')
-}
-
-(function () {
+var globalThis = exports
+globalThis.acorn = require('./acorn.js')
 /**
  * @license
  * Copyright 2013 Google LLC
@@ -4832,4 +4826,3 @@ Interpreter.prototype['getStateStack'] = Interpreter.prototype.getStateStack;
 Interpreter.prototype['setStateStack'] = Interpreter.prototype.setStateStack;
 Interpreter['VALUE_IN_DESCRIPTOR'] = Interpreter.VALUE_IN_DESCRIPTOR;
 Interpreter['Status'] = Interpreter.Status;
-}).call(scope)
