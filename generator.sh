@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # STEP 1: Copy Acorn over
 cp JS-Interpreter/acorn.js .
 
