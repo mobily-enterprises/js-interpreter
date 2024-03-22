@@ -30,7 +30,6 @@ jobs:
          ref: master
     - name: Test npm
       run: |
-        ./generator.sh
         npm install .
         npm run build 
         npm test
