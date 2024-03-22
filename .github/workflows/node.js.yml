@@ -21,6 +21,7 @@ jobs:
       with:
         update: true
         msystem: mingw64
+        install: patch  
         pacboy: nodejs:x
     - uses: actions/checkout@v3
       with:
@@ -29,8 +30,6 @@ jobs:
          ref: master
     - name: Test npm
       run: |
-        pwd
-        ls
         ./generator.sh
         npm install .
         npm run build 
