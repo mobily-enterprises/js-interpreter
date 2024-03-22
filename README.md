@@ -1,4 +1,4 @@
-# NPM pacckage for Neil Fraser's JS Interpreter
+# NPM package for Neil Fraser's JS Interpreter
 
 This is an NPM version of the [JS interpreter by NeilFraser](https://github.com/NeilFraser/JS-Interpreter).
 
