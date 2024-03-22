@@ -1,0 +1,34 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+defaults:
+  run:
+    shell: msys2 {0}
+
+jobs:
+  build:
+
+    runs-on: windows-2019
+    steps:
+    - uses: msys2/setup-msys2@v2
+      with:
+        update: true
+        msystem: mingw64
+        pacboy: node:x
+    - uses: actions/checkout@v3
+      with:
+         submodules: true
+         fetch-depth: 15
+         ref: interestin
+    - name: Test npm
+      run: |
+        npm install .
+        npm run build 
+        
